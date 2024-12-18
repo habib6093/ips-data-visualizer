@@ -8,14 +8,17 @@
     "@testing-library/user-event": "^13.2.1",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.9.5",
+    "@typescript-eslint/parser": "^4.9.5",
+    "chart.js": "^4.4.7",
+    "chartjs": "^0.3.24",
+    "eslint": "^8.56.0",
     "react": "^18.3.1",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.0",
     "typescript": "^5.x.x",
-    "eslint": "^8.56.0",
-    "@typescript-eslint/parser": "^4.9.5",
-    "@typescript-eslint/eslint-plugin": "^4.9.5"
+    "web-vitals": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/chart.js": "^2.9.41"
   }
 }

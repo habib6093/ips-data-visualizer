@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+.tabs-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background: #007bff;
+}
+
+.tab-button.inactive {
+  background: #ccc;
+}
+
