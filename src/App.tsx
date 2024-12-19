@@ -4,6 +4,7 @@ import DMvsDQ0Chart from "./Components/Charts/DMvsDQ0Chart";
 import DoVsCq0Chart from "./Components/Charts/DoVsCq0Chart";
 import DmVsDq0Histogram from "./Components/Charts/DmVsDq0Histogram";
 import ParticleTable from "./Components/Charts/ParticleTable";
+import DualAxisDynamicChart from "./Components/Charts/DoVsCq0AndDmVsDq0";
 import "./App.css";
 
 type Tab = {
@@ -13,9 +14,10 @@ type Tab = {
 };
 
 const App: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<string>("DualAxisChart");
+  const [activeTab, setActiveTab] = useState<string>("DualAxisDynamicChart");
 
   const tabs: Tab[] = [
+    { id: "DualAxisDynamicChart", label: "Dual Axis Dynamic Chart", component: <DualAxisDynamicChart /> },
     { id: "DualAxisChart", label: "Dual Axis Chart", component: <DualAxisChart /> },
     { id: "DMvsDQ0Chart", label: "Dm vs Dq0 Chart", component: <DMvsDQ0Chart /> },
     { id: "DoVsCq0Chart", label: "Do vs Cq0 Chart", component: <DoVsCq0Chart /> },
